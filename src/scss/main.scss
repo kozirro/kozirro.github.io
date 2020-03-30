@@ -8,6 +8,9 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    @media (max-width: $mobile) {
+        font-size: 11px;
+    }
 }
 
 *,
@@ -21,4 +24,13 @@ body {
     background: #FFF;
     font-family: 'Poppins', sans-serif;
     border: 16px solid $bigstone;
+    @media (max-width: $mobile) {
+        border: none;
+    }
+}
+
+.container {
+    max-width: 1216px;
+    padding: 0 16px;
+    margin: 0 auto;
 }

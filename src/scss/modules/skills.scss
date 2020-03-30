@@ -1,5 +1,6 @@
 .skills {
-    max-width: 1184px;
+    max-width: 1216px;
+    padding: 0 16px;
     margin: 0 auto 8rem;
     &__title {
         font-size: 2.25rem;
@@ -7,6 +8,9 @@
         font-weight: 600;
         padding: 1rem 0;
         border-bottom: 2px solid #E5E8EC;
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
     }
 }
 
@@ -14,10 +18,18 @@
     display: grid;
     padding: 8rem 0 0;
     grid-template-columns: 1fr 1fr;
+    column-gap: .5rem;
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        padding: 5rem 0 0;
+    }
     &__item {
         color: $gray;
         padding: 11px 0 11px 30px;
         position: relative;
+        @media (max-width: $mobile) {
+            padding-left: 20px;
+        }
         &::before {
             position: absolute;
             top: 10px;
@@ -28,25 +40,31 @@
             height: 18px;
             background: url('../assets/img/check-green.svg');
             .skills-list--violet & {
-                background: url('../assets/img/check-violet.svg');
+                background-image: url('../assets/img/check-violet.svg');
             }
             .skills-list--blue & {
-                background: url('../assets/img/check-blue.svg');
+                background-image: url('../assets/img/check-blue.svg');
+            }
+            @media (max-width: $mobile) {
+                width: 12px;
+                height: 12px;
+                top: 11px;
+                background-size: contain;
             }
         }
     }
     &__list {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         list-style-type: none;
         padding: 0;
         margin: 0;
         column-gap: 1.5rem;
-        margin-top: calc(1.5rem + 4px);
+        margin-top: calc(1.5rem+4px);
     }
     &__title {
-        font-size: 32px;
-        line-height: 44px;
+        font-size: 2rem;
+        line-height: 2.75rem;
         font-weight: 600;
         margin: 0;
         &::before {
