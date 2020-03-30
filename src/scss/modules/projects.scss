@@ -42,6 +42,9 @@
     box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
     border-radius: 0.5rem;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__footer {
         background: $light-gray;
         padding: 1rem 3rem;
