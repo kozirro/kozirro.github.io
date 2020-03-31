@@ -5,15 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
+    <title>Jakub coś tam</title>
+    <meta name="description" content="a do nauki takie tam było" />
 
     <!-- Title -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="Jakub coś tam" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="a do nauki takie tam było" />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="httpsL//kozirro.github.io" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
@@ -27,7 +27,101 @@
 </head>
 
 <body>
-    <h1>Jakub Kozi Wójcik!</h1>
+    <main>
+        <section class="hero">
+            <img src="assets/img/wtf.jpg" class="hero__image" alt="Here some" />
+            <h1 class="hero__title"> Siemanom, tutaj Jakub Wariato, najwiekszy Trasher ldz :D </h1>
+            <p class="hero__description"> Stronke uskuteczniak aby podłapać trochę frontu, podstawy, a i potem lece ze swoim projektem, większym. Dlaczego nie? tutaj jakiś
+                <a class="hero__link" href="#mySkills">skills</a>. a tutaj jest kolejny <a class="hero__link" href="#myProjects">myProjects</a>
+            </p>
+            <a class="hero__mail" href="mailto:anime@czasem.lubie">anime@czasem.lubie</a>
+        </section>
+        <section id="mySkills" class="skills">
+            <h2 class="skills__title">
+                Skills
+            </h2>
+            <section class="skills-list">
+                <h3 class="skills-list__title">Working knowledge</h3>
+                <ul class="skills-list__list">
+                    <li class="skills-list__item">Sematic HTML5</li>
+                    <li class="skills-list__item">Flexbox</li>
+                    <li class="skills-list__item">Mardown</li>
+                    <li class="skills-list__item">JS</li>
+                    <li class="skills-list__item">Figma</li>
+                    <li class="skills-list__item">CSS</li>
+                    <li class="skills-list__item">Forms</li>
+                    <li class="skills-list__item">JS: some more</li>
+                    <li class="skills-list__item">Sass</li>
+                </ul>
+            </section>
+
+            <section class="skills-list skills-list--violet">
+                <h3 class="skills-list__title">Know something about</h3>
+                <ul class="skills-list__list">
+                    <li class="skills-list__item">JS ES 6</li>
+                    <li class="skills-list__item">css animation</li>
+                    <li class="skills-list__item">API some</li>
+                    <li class="skills-list__item">npm scripts</li>
+                    <li class="skills-list__item">git</li>
+                    <li class="skills-list__item">Progressive web apps</li>
+                    <li class="skills-list__item">accessibility</li>
+                </ul>
+            </section>
+
+            <section class="skills-list skills-list--blue">
+                <h3 class="skills-list__title">Want to learn</h3>
+                <ul class="skills-list__list">
+                    <li class="skills-list__item">React JS</li>
+                    <li class="skills-list__item">Angular</li>
+                    <li class="skills-list__item">Electron</li>
+                    <li class="skills-list__item">Gatsby</li>
+                    <li class="skills-list__item">Node JS</li>
+                    <li class="skills-list__item">TypeScript</li>
+                    <li class="skills-list__item">Web ockets</li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="myProjects" class="projects">
+            <h2 class="projects__title">
+                Recent Projects
+            </h2>
+            <div class="container">
+                <p class="projects__description">
+                    I stared 2 months ago with this course"
+                </p>
+                <ul class="projects-list projects-list--js">
+
+                </ul>
+            </div>
+        </section>
+        <footer id="contact" class="contact">
+            <h2 class="contact__title">
+                Kontakt
+            </h2>
+            <div class="container">
+                <p class="contact__description">Jak coś to call </p>
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <img class="social__icon" src="assets/img/fb-icon.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <img class="social__icon" src="assets/img/gh-icon.svg" alt="github">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <img class="social__icon" src="assets/img/ig-icon.svg" alt="instagram">
+                        </a>
+                    </li>
+                </ul>
+                <a class="contact__mail" href="mailto:anime@czasem.lubie">anime@czasem.lubie</a>
+            </div>
+        </footer>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
